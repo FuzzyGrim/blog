@@ -118,4 +118,4 @@ end
 
 An example of a Gist embed below.
 
-{% gist mmistakes/6589546 %}
+{% gist FuzzyGrim/1cf9cbe87035c4ae5e34dd98504513fa %}
