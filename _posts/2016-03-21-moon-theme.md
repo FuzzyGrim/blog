@@ -92,10 +92,6 @@ Your site's logo. It will show on homepage and navigation menu. Also used for tw
 #### background
 Image for background. If you don't set it, color will be used as a background.
 
-#### Google Analytics and Webmaster Tools
-
-Google Analytics UA and Webmaster Tool verification tags can be entered in `_config.yml`. For more information on obtaining these meta tags check [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownership) support.
-
 #### MathJax
 It's enabled. But if you don't want to use it. Set it false in  `_config.yml`.
 
