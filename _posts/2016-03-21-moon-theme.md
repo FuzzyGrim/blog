@@ -93,7 +93,7 @@ Your site's logo. It will show on homepage and navigation menu. Also used for tw
 Image for background. If you don't set it, color will be used as a background.
 
 #### HITS
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)](https://hits.seeyoufarm.com)                                    
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffuzzygrim.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 #### MathJax
 It's enabled. But if you don't want to use it. Set it false in  `_config.yml`.
