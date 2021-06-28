@@ -136,6 +136,7 @@ If you want some aliases for your email you can choose of these two services:
 
 ## Media Player
 [mpv](https://www.videolan.org/vlc/) - Simple, extensible, customizable and cross-platform.
+
 [VLC](https://www.videolan.org/vlc/) - Feature-rich, powerful and runs on all platforms.
 
 
