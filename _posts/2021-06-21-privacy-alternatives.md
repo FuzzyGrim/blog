@@ -84,7 +84,7 @@ With growing concerns about online privacy and personal data security, more peop
 
 [CryptPad](https://cryptpad.fr/) – CryptPad is a private-by-design alternative to popular office tools and cloud services. It's an open-source "zero knowledge" **collaborative** cloud editor, meaning that you can share your documents and collaborate just like in Google Documents. They offer Rich Text, Code, Presentation, Sheet (beta), Poll, Kanban, Whiteboard, and CryptDrive.
 
-[crypt.ee](https://crypt.ee/) - This is a privacy-focused platform for photo and document storage and editing. They don't even require an email address to sign up. It's faster than CryptPad but it doesn't but you can't share your documents with anyone or collaborate.
+[crypt.ee](https://crypt.ee/) - This is a privacy-focused platform for photo and document storage and editing. They don't even require an email address to sign up. It's faster than CryptPad but you can't share your documents with anyone or collaborate.
 
 [LibreOffice](https://www.libreoffice.org) – LibreOffice is a powerful office suite - its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity. LibreOffice includes several applications that make it the most powerful Free and Open Source office suite on the market - the best alternative to Microsoft Office.
 
@@ -135,7 +135,7 @@ If you want some aliases for your email you can choose of these two services:
 [ProtonVPN](https://protonvpn.com/) - Strong contender in the VPN space, and they have been around since 2016. ProtonVPN is based in Switzerland and is the only good option if you're looking for a free VPN, has no ads and no speed limits. It has also been [independently audited](https://protonvpn.com/blog/open-source/).
 
 ## Media Player
-[mpv](https://www.videolan.org/vlc/) - Simple, extensible, customizable and cross-platform.
+[mpv](https://mpv.io/) - Simple, extensible, customizable and cross-platform.
 
 [VLC](https://www.videolan.org/vlc/) - Feature-rich, powerful and runs on all platforms.
 
