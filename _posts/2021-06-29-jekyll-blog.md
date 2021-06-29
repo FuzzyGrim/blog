@@ -9,9 +9,6 @@ tag:
 - blog
 comments: true
 ---
-
-![Homepage](https://user-images.githubusercontent.com/34800654/123861022-f659d880-d926-11eb-9607-85251779ef84.png)    
-
       
 ## Installation
 * Fork the [repo](https://github.com/FuzzyGrim/fuzzygrim.github.io)
