@@ -10,7 +10,7 @@ tag:
 comments: true
 ---
 
-![Homepage](https://user-images.githubusercontent.com/34800654/123859116-8e09f780-d924-11eb-8bda-dee58365a3ab.png)    
+![Homepage](https://user-images.githubusercontent.com/34800654/123861022-f659d880-d926-11eb-9607-85251779ef84.png)    
 
       
 ## Installation
