@@ -52,3 +52,7 @@
     {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
     <style type="text/css">.feature {background-image:url({{ feature }});}</style>
     {% endif %}
+
+    <!-- We use StatCrab to protect your privacy -->
+    <script src="https://app.statcrab.com/embed/crab.js" data-project="TYZCOS" defer></script>
+    <!-- StatCrab.com -->
