@@ -28,7 +28,7 @@ With growing concerns about online privacy and personal data security, more peop
 
 [Librewolf](https://librewolf-community.gitlab.io/) - A fork of Firefox, focused on privacy, security and freedom. It's basically Firefox, but with all the tweaks mentioned before.
 
-[TOR browser](https://www.torproject.org/download/) - The best choice if you need an extra layer of anonymity. It's a modified version of Firefox that will help you to protect yourself against tracking, surveillance, and censorship.
+[Tor browser](https://www.torproject.org/download/) - The best choice if you need an extra layer of anonymity. It's a modified version of Firefox that will help you to protect yourself against tracking, surveillance, and censorship.
 
 
 ## Search Engine
