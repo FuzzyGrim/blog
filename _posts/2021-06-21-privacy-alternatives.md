@@ -138,6 +138,3 @@ If you want some aliases for your email you can choose of these two services:
 [mpv](https://mpv.io/) - Simple, extensible, customizable and cross-platform.
 
 [VLC](https://www.videolan.org/vlc/) - Feature-rich, powerful and runs on all platforms.
-
-
-### If you are looking for an alternative to one of the apps you are currently using and it's not listed here, you should look at [AlternativeTo](https://alternativeto.net/).
