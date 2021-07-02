@@ -242,9 +242,9 @@ header .entry-meta {
 	padding: 20px;
 	background: #fff;
 	border-radius: 5px;
-	width: 45%;
 	position: relative;
 	transition: all 5s ease-in-out;
+	display: table;
 }
 .popup h2 {
 	margin-top: 0;
