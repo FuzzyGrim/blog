@@ -24,6 +24,9 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
+# Comments
+#disqus_shortname:  username
+
 # Social
 # if you don't have any of social below, comment the line.
 

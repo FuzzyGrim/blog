@@ -53,6 +53,9 @@ Image for background. If you don't set it, color will be used as a background.
 #### MathJax
 It's enabled. But if you don't want to use it. Set it false in  `_config.yml`.
 
+#### Disqus Comments
+Set your disqus shortname in `_config.yml` to use comments.
+
 ---
 
 ### Navigation Links
@@ -92,6 +95,9 @@ feaure: http://example.com/some-image.png
  This also will be used for twitter card:
 
 ![Twitter Card](https://cloud.githubusercontent.com/assets/754514/14509719/61c5751c-01d6-11e6-8c29-ce8ccad149bf.png)
+
+### Comments
+To show disqus comments for your post add `comments: true` to your post's front matter.
 
 ---
 
