@@ -10,6 +10,8 @@ sitemap: false
  *  WEB: http://taylantatli.me
  *
 */
+$fa-font-path: "../fonts/font-awesome/";
+@import 'font-awesome';
 
 // Partials
 @import "variables";
