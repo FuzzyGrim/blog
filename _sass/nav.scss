@@ -103,11 +103,12 @@
 			position: absolute;
 			top: 0;
 			line-height: 40px;
-			font-family: 'fontawesome';
+			font-family: 'Font Awesome\ 5 Free';
 			color: $white;
 			speak: none;
 			-webkit-font-smoothing: antialiased;
 			content: "\f105";
+			font-weight: 900;
 		}
 		&.dl-back:after {
 			left: 10px;
