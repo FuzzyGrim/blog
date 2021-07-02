@@ -18,7 +18,7 @@ layout: compress
                 <div class="post-title">
                     <h1>{{ page.title }}</h1>
                     <a class="btn zoombtn" href="{{site.url}}">
-                        <i class="fa fa-home"></i>
+                        <i class="fas fa-home"></i>
                     </a>
                 </div>
                 <div class="post-list">
@@ -29,7 +29,7 @@ layout: compress
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                             <p>{{ post.excerpt }}</p>
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
-                            <h4 style="display:inline-block; margin-left: 3%; font-weight: 300;"><i class="fa fa-calendar-o"></i> {{ post.date | date_to_string }} / <i class="fa fa-clock-o"></i> {% include read-time.html content=post.content %}</h4>
+                            <h4 style="display:inline-block; margin-left: 3%; font-weight: 300;"><i class="far fa-calendar"></i> {{ post.date | date_to_string }} / <i class="far fa-clock"></i> {% include read-time.html content=post.content %}</h4>
                         </li>
                     </ul>
                       {% endif %}
