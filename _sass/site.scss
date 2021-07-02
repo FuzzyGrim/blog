@@ -251,8 +251,8 @@ header .entry-meta {
 	text-align: center;
 	color: #333;
 }
-/* If the screen size is 900px wide or less (Ipad size), set the font-size of popup div to 12px */
-@media screen and (max-width: 600px) {
+/* If the screen size is 770px wide or less (Ipad size), set the font-size of popup div to 12px */
+@media screen and (max-width: 770px) {
 	.popup .content p {
 		font-size: 12px;
 	}
