@@ -1,6 +1,6 @@
 # Personal Blog
 
 ## Preview
-See [my website](https://fuzzygrim.github.io/) hosted on GitHub.
+See [my website](https://www.fuzzygrim.com). 
 
 ## To do

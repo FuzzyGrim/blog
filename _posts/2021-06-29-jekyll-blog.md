@@ -11,7 +11,7 @@ comments: true
 ---
       
 ## Installation
-* Fork the [repo](https://github.com/FuzzyGrim/fuzzygrim.github.io)
+* Fork the [repo](https://github.com/FuzzyGrim/blog)
 * Edit `_config.yml` file.
 * Remove sample posts from `_posts` folder and add yours.
 * Edit `index.md` file in `about` folder.
