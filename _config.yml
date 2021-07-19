@@ -35,11 +35,12 @@ github-url:         FuzzyGrim
 
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - kramdown-parser-gfm 
 
 jekyll-mentions:
     base_url: https://www.fuzzygrim.com/
