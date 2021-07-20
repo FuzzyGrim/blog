@@ -180,20 +180,13 @@ header .entry-meta {
 .entry-title a {
     text-decoration: none;
 }
-.entry-tags {
-	display: block;
-    margin-top: 1rem;
-	width: 40%;
-    float: left;
-    text-align: left;
+.tags-div {
+	float: left;
 }
-.social-share {
-	display: block;
-    margin-top: 1rem;
-    width: 60%;
-    float: right;
-    text-align: right;
+.support-div {
+	float: right;
 }
+  
 .feature {
     @include transition(.5s);
     @media #{$small} {
