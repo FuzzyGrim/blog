@@ -40,7 +40,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
-  - kramdown-parser-gfm 
 
 jekyll-mentions:
     base_url: https://www.fuzzygrim.com/
