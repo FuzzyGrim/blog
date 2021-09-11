@@ -20,13 +20,13 @@ This command shows all packages you have explicitly installed with their respect
 pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
 ```
 
-The same command as the previous but it only shows packages installed from the AUR.
+The same command as the previous but it only shows packages installed from the AUR:
 
 ```
 pacman -Qim | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
 ```
 
-Uninstall all unneeded packages and their unused dependencies.
+Uninstall all unneeded packages and their unused dependencies:
 ```
 sudo pacman -Rsn $(pacman -Qdtq)
 ```
@@ -93,7 +93,7 @@ This can be removed using `rm` on `/var/log/journal/` or by `journalctl`. You ca
 journalctl --vacuum-size=100M
 ```
 
-Or by time limit
+Or by time limit:
 ```
 journalctl --vacuum-time=7d
 ```
