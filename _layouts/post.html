@@ -22,7 +22,7 @@ layout: compress
                         <i class="far fa-calendar"></i> {{ page.date | date_to_string }} / <i class="far fa-clock"></i> {% include read-time.html content=content %}
                     </p><!-- /.entry-reading-time -->
                     
-                    {% if page.project %}
+                    {% if page.category == 'projects' %}
                     <a class="btn zoombtn" href="{{site.url}}/projects/">
                     {% else %}
                     <a class="btn zoombtn" href="{{site.url}}/posts/">
