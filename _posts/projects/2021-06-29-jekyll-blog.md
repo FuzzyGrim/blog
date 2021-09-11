@@ -4,7 +4,7 @@ title:  "Jekyll Blog"
 date:   2021-06-29
 excerpt: "Minimal, one column Jekyll theme blog."
 tag:
-- jekyll 
+- tutorial 
 - blog
 comments: true
 ---
