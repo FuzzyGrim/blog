@@ -78,6 +78,20 @@ Persistent=true
 WantedBy=multi-user.target
 ```
 
+Another option is to create a pacman hook, this will run `paccache` after a determined pacman operation, for example if you want it to run whenever you upgrade, install or remove a package; just create `/etc/pacman.d/hooks/clean_package_cache.hook` and add:
+
+```
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+[Action]
+Description = Cleaning pacman cache...
+When = PostTransaction
+Exec = /usr/bin/paccache -rk 1 -ruk 0
+```
 
 
 ## Clean system logs
