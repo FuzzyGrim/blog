@@ -2,19 +2,24 @@
 layout: post
 title: "Arch linux maintenance recommendations"
 date: 2021-09-09
-excerpt: "It is never a bad idea to clean your cache from time to time."
+excerpt: "It is never a bad idea to start doing a regular system maintenance."
 tags: [arch linux, tutorial]
 ---
 
-## Clean the cache in your /home directoy
+## Clean the cache in your /home directory
 As we use our system, the cache will fill up and take up a lot of space. The folder dedicated to the cache is `~/.cache`, if you want to check the size of the folder, you can do it with this command:
 ```
 du -sh ~/.cache/
 ```
 
+If you see that the cache folder is big and you want to clear it, you can use this commands:
+```
+rm -rf ~/.cache/*
+```
+
 ## Remove unwanted packages
 
-This command shows all packages you have explicitly installed with their respective memory size: 
+This command shows all the packages that you have installed explicitly with their respective memory size, this can be used to check if there is any software that you no longer use and want to remove:   
 
 ```
 pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
@@ -30,6 +35,9 @@ Uninstall all unneeded packages and their unused dependencies:
 ```
 sudo pacman -Rsn $(pacman -Qdtq)
 ```
+
+Also, the next time you remove a package, instead of using the usual `pacman -R package-name`, use `pacman -Rs package-name`. This will remove the target package and all packages that were installed as dependencies for that package that aren't required by any other packages. If you also want to delete the configuration files corresponding to the package, use `pacman -Rns package-name`.
+
 
 ## Clean pacman cache
 
@@ -101,7 +109,7 @@ You can check the disk space used by the journal files with:
 journalctl --disk-usage
 ```
 
-This can be removed using `rm` on `/var/log/journal/` or by `journalctl`. You can keep only the latest logs by size limit (e.g. keep only 100Mb of the latest logs):
+This can be removed using `rm` on `/var/log/journal/` or by `journalctl`. You can keep only the latest logs by size limit (e.g. Keep only 100Mb of the latest logs):
 
 ```
 journalctl --vacuum-size=100M
@@ -114,8 +122,17 @@ journalctl --vacuum-time=7d
 
 After cleaning the log files, you can uncomment `SystemMaxUse` in `/etc/systemd/journald.conf` to limit the disk usage used by these files by , e.g: `SystemMaxUse=500M`
 
+
+## Clean broken symlinks
+There may be some broken symlinks in your system which you may want to delete. If you want to get a list of all the broken symlinks in your system, use this commands:
+```
+find / -xtype l -print
+```
+Then check and remove the unwanted and unnecessary entries from this list.
+
 ## Extra tips and recommendations:
 
+### Dependency tree
 To view the dependency tree of a package, use `pactree` from `pacman-contrib`:
 
 ```
@@ -153,6 +170,11 @@ done | \
   sed -e 's/\[ALPM\] installed //' -e 's/(.*$//'
 ```
 
-Finally, if you want to check which folders are taking a lot of space, I recommend using `ncdu`.
+### Software
+If you want to check which folders are taking a lot of space, I recommend using [ncdu](https://archlinux.org/packages/community/x86_64/ncdu/), you can install it with `sudo pacman -S ncdu`.
+
+![2021-10-12-17:18:39](https://user-images.githubusercontent.com/34800654/136983734-dda76948-7665-46d4-b5e1-b78a9a49eb2f.png)
+
+If you want a software that makes a backup when you upgrade your system, you can try [timeshift-autosnap](https://aur.archlinux.org/packages/timeshift-autosnap/). This package is only available in the AUR, therefore for installing it, use `paru -S timeshift-autosnap` or your preferred AUR helper. You can also use timeshift for automatic backups depending on your desired interval. 
 
 
