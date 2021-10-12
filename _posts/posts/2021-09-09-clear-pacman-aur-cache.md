@@ -2,7 +2,7 @@
 layout: post
 title: "Arch linux maintenance recommendations"
 date: 2021-09-09
-excerpt: "Some helpful commands to maintain a clean Arch Linux system"
+excerpt: "It is never a bad idea to clean your cache from time to time."
 tags: [arch linux, tutorial]
 ---
 
