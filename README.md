@@ -1,5 +1,5 @@
 # Personal Blog
 
-Link to my [website](https://www.fuzzygrim.com), it is made with [Jekyll](https://jekyllrb.com/) amd hosted at [Netlify](https://www.netlify.com/).
+Link to my [website](https://www.fuzzygrim.com), powered by [Jekyll](https://jekyllrb.com/) and hosted with [Netlify](https://www.netlify.com/).
 
-Here is the [documentation](https://www.fuzzygrim.com/projects/jekyll-blog) (it's still in progress).
+Here is the [documentation](https://www.fuzzygrim.com/projects/jekyll-blog) (WIP).
