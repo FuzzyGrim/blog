@@ -19,6 +19,8 @@ My budget was around 300€, and I was looking for something small and quiet bec
 
 I wanted an SSD for the OS, and since the PC didn't seem to have space for another internal drive, I bought a 500GB external SSD from [Samsung](https://www.amazon.es/Samsung-T5-500GB-Estado-Externo/dp/B074MCM721) for 75€. The 1TB hard drive that came with the PC was going to be used for NextCloud and I already had a 1TB external hard drive for backups. Finally, I wanted another drive to store my media server, so I went with a 2TB [WD Elements](https://www.amazon.es/WD-Elements-Disco-Externo-port%C3%A1til/dp/B06W55K9N6) for 60€. This added up to a total price of 200€.
 
+![Photo 22-01-24 13-50-54 6159](https://user-images.githubusercontent.com/34800654/150787370-f90ab96f-6319-4545-a88f-d943804ad747.jpg)
+
 ## Operating System
 At first, I was thinking of using Debian or Ubuntu Server, however after reading different posts on [r/homelab](https://www.reddit.com/r/homelab) and [r/selfhosted](https://www.reddit.com/r/selfhosted/) I was convinced to try Proxmox. My current setup, after learning how to use Proxmox and seeing multiple comparisons on VM vs LXC, is:
 
