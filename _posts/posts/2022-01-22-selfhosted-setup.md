@@ -398,7 +398,7 @@ services:
 ```
 
 ### Caddy
-Caddy is my choice for reverse-proxy, it is used to map a domain or subdomain to the corresponding port exposed in the docker container. It is simple to configure and also automatically obtains and renews TSL certificates for you.
+Caddy is my choice for reverse-proxy, it is used to map a domain or subdomain to the corresponding port exposed in the docker container. It is simple to configure and also automatically obtains and renews TLS certificates for you.
 
 ```yml
 version: '3'
