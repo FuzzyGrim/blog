@@ -6,9 +6,9 @@ excerpt: "I don't have anything to hide, but I don't have anything to show you e
 tags: [privacy, foss]
 ---
 
-This post includes a curated list of apps and tools that I recommend. All the apps listed here are open-source, privacy respecting and  free as [freeware](https://en.wikipedia.org/wiki/Freeware) AND [freedom](https://en.wikipedia.org/wiki/Free_software).
+This post includes a curated list of apps and tools that I recommend. All the apps listed here are open-source, privacy respecting and  free as [freeware](https://en.wikipedia.org/wiki/Freeware) and [freedom](https://en.wikipedia.org/wiki/Free_software).
 
-With growing concerns about online privacy and personal data security, more people than ever are considering alternatives to products from large proprietary companies. The main purpose of this post is to show some **easy to set up and use alternatives** to help those who are just starting to switch.
+With growing concerns about online privacy and personal data security, more people than ever are considering alternatives to products from large proprietary companies. The main purpose of this post is to show some **easy to set up and use** alternatives to help those who are just starting to switch.
 
 
 ## Social Media
@@ -116,7 +116,7 @@ With growing concerns about online privacy and personal data security, more peop
 
 [Tutanota](https://tutanota.com/) - Another good free email alternative, Tutanota is an email service with a focus on security and privacy through the use of encryption, located in Germany. Free accounts up to 1 GB.
 
-If you want some aliases for your email you can choose of these two services:
+If you want some aliases for your email you can choose one of these two services:
 
 [Anonaddy](https://anonaddy.com/) - Anonymous forwarding email service. Forwarded email can be encrypted (OpenPGP). Create Unlimited Email Aliases For Free
 
