@@ -55,7 +55,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-redirect-from
 
+  
 jekyll-mentions:
     base_url: https://www.fuzzygrim.com/
 
