@@ -4,6 +4,8 @@ title: "Media server setup with Jellyfin, Sonarr, Radarr and Prowlarr"
 date: 2021-08-01
 excerpt: "Setting up a home media server may sound intimidating, but it doesn’t have to be."
 tags: [self-hosting, foss, tutorial]
+redirect_from:
+  - /posts/jellyfin
 ---
 
 ## What is Jellyfin?
