@@ -1,7 +1,7 @@
 # Site
 title:              FuzzyGrim
 bio:                'Welcome to my blog.'
-description:        "Another computer enthusiast; this is a space where I share my thoughts and learnings."
+description:        "Another computer enthusiast"
 reading_time:       true
 words_per_minute:   225
 logo:               'assets/img/logo.png'
@@ -47,6 +47,7 @@ defaults:
 
 email:              fuzzygrim@protonmail.com
 github-url:         FuzzyGrim
+rss:                true
 
 
 # Gems
