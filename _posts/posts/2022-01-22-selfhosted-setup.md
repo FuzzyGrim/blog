@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Self-hosted setup"
+title: "My self-hosting setup"
 date: 2022-01-22
 excerpt: "An overview of my first self-hosted setup with the hows and whys."
 tags: [self-hosting, docker, server]
