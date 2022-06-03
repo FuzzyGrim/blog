@@ -53,4 +53,6 @@
     <style type="text/css">.feature {background-image:url({{ feature }});}</style>
     {% endif %}
 
-    <script async defer data-website-id="fe23e1a6-3051-4f09-a3c6-90e6ee3dbfd0" src="https://umami.fuzzygrim.com/fuzzy.js"></script>
+    {% if site.umami %}
+        <script async defer data-website-id="fe23e1a6-3051-4f09-a3c6-90e6ee3dbfd0" src="https://{{ site.umami }}/fuzzy.js"></script>
+    {% endif %}

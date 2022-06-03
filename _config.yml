@@ -49,6 +49,7 @@ commento-url:           commento.fuzzygrim.com
 email:              fuzzygrim@protonmail.com
 github-url:         FuzzyGrim
 rss:                true
+umami:              umami.fuzzygrim.com
 
 # Gems
 plugins:
