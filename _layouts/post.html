@@ -41,16 +41,20 @@ layout: compress
                     <div id="commento"></div>
                 {% endif %}
                 {% include meta.html %}
-                <div id="monero" class="overlay">
+                <div id="donate" class="overlay">
                     <div class="popup">
                         <a class="close" href="#return">&times;</a>
-                        <h2>Monero address</h2>
-                        <div class="content">
-                            <p>84QRpjRZhXqebshV4PQJhCgAhPWpRLp4nezGDDTUzzYYP7rvwXsM3htdpQdtfxwTnybZcowphp9EG2aPxDFYaFgVD7Xmbng</p>
-                            <img src="../assets/img/monero.png">
+                        <div style="margin-top: 10px;"></div>
+                            {% if site.monero %}
+                                <h2>Monero address</h2>
+                                <p>{{ site.monero.address }}</p>
+                                <img src="{{ site.monero.qr }}">
+                            {% endif %}
+                            {% if site.kofi %}
+                            <h2>Ko-Fi</h2>
+                            <a href="https://ko-fi.com/{{ site.kofi }}"><p style="text-align:center">https://ko-fi.com/{{ site.kofi }}</p></a>
+                            {% endif %}
                         </div>
-                        <h2>Ko-Fi</h2>
-                        <a href="https://ko-fi.com/fuzzygrim"><p style="text-align:center">https://ko-fi.com/fuzzygrim</p></a>
                     </div>
                 </div>
             </div>
