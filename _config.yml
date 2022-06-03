@@ -41,6 +41,7 @@ defaults:
 
 # Comments
 #disqus_shortname:  username
+commento-url:           commento.fuzzygrim.com
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -48,7 +49,6 @@ defaults:
 email:              fuzzygrim@protonmail.com
 github-url:         FuzzyGrim
 rss:                true
-
 
 # Gems
 plugins:

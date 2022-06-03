@@ -4,6 +4,7 @@ title: "My self-hosting setup"
 date: 2022-01-22
 excerpt: "An overview of my first self-hosted setup with the hows and whys."
 tags: [self-hosting, docker, server]
+comments: true
 ---
 
 A few months ago, I [started my journey](https://www.fuzzygrim.com/posts/jellyfin) in self-hosting with a media server on my laptop, and after playing with some other applications and being able to enjoy the control over my system and my data, I became even more interested. Also, as I started college, I have needed my laptop for it, so I decided to buy a dedicated machine for hosting and take this opportunity to learn more.

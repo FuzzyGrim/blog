@@ -31,6 +31,15 @@ layout: compress
                     </a>
                 </div>
                 {{ content }}
+                {% if page.comments and site.commento-url %}
+                    <hr>
+                    <div>
+                        <h1 style="margin-bottom: 0">Comments</h1>
+                        Anonymous comments will be manually approved.
+                    </div>
+                    <script defer src="https://{{ site.commento-url }}/js/commento.js"></script>
+                    <div id="commento"></div>
+                {% endif %}
                 {% include meta.html %}
                 <div id="monero" class="overlay">
                     <div class="popup">

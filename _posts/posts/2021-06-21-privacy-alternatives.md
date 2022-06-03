@@ -4,6 +4,7 @@ title: "List of free privacy-conscious apps"
 date: 2021-06-21
 excerpt: "I don't have anything to hide, but I don't have anything to show you either."
 tags: [privacy, foss]
+comments: true
 ---
 
 This post includes a curated list of apps and tools that I recommend. All the apps listed here are open-source, privacy respecting and  free as [freeware](https://en.wikipedia.org/wiki/Freeware) and [freedom](https://en.wikipedia.org/wiki/Free_software).
