@@ -40,7 +40,6 @@ defaults:
       category: projects
 
 # Comments
-#disqus_shortname:  username
 commento-url:           commento.fuzzygrim.com
 
 # Social
