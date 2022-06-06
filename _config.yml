@@ -38,6 +38,13 @@ defaults:
     values:
       permalink: projects/:title
       category: projects
+  # seasons
+  - scope:
+      path: "_posts/seasons"
+      type: posts
+    values:
+      permalink: seasons/:title
+      category: seasons
 
 # Comments
 commento-url:           commento.fuzzygrim.com
