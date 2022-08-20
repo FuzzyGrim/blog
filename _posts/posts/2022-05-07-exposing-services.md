@@ -2,7 +2,7 @@
 layout: post
 title: "Securely expose your self-hosted services"
 date: 2022-05-07
-excerpt: "Guide on Traefik, Authelia, Fail2ban and Cloudflare Tunnels"
+excerpt: "Guide on Traefik, Authelia, Fail2ban and Cloudflare Tunnels."
 tags: [self-hosting, server, security]
 comments: true
 ---
