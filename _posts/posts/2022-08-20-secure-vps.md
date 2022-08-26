@@ -26,7 +26,7 @@ General tasks should be done as a regular user, so you should create a new user 
 
 - Add the user to the `sudo` group: `usermod -aG sudo username`
 
-- To run `docker` commands without sudo, add the user to the `docker` group: `usermod -aG docker username`
+- You can run `docker` commands without sudo by adding your user to the `docker` group: `usermod -aG docker username`, but be aware of the [security issues](https://docs.docker.com/engine/security/#docker-daemon-attack-surface) of doing so.
 
 
 ## Disable root
