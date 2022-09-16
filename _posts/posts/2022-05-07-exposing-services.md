@@ -180,7 +180,6 @@ If you can see the dashboard, it means that you now have Traefik running, and it
       - "traefik.http.routers.service-name.rule=Host(`service-name.domain.com`)"
       - "traefik.http.routers.service-name.tls=true"
       - "traefik.http.services.service-name.loadbalancer.server.port=service-port"
-      - "traefik.docker.network=proxy"
 
 networks:
   proxy:
@@ -575,6 +574,10 @@ sudo systemctl enable --now cloudflared
 
 Now if you go to `auth.domain.com`, you should see the Authelia web portal even when you are away from home. As you can see, Cloudflare Tunnels allows you to expose services to the internet without worrying about exposing ports directly to the scary internet, this also means that you won't be sharing your IP address to the world because they will be connecting to the Cloudflare servers first.
 
+---
+**⚠ WARNING:** Remember to run `sudo systemctl restart cloudflared` if you add a new IP routes or change the configuration file.
+
+---
 
 ## Fail2Ban
 The last thing to configure is Fail2ban, which is a software application that protects you from brute force attacks. It monitors the application logs and you can tell Fail2ban after how many log errors in a specific time interval it should ban the remote source.
