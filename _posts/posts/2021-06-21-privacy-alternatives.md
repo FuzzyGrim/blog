@@ -3,7 +3,7 @@ layout: post
 title: "List of free privacy-conscious apps"
 date: 2021-06-21
 excerpt: "I don't have anything to hide, but I don't have anything to show you either."
-tags: [privacy, foss]
+tags: [privacy]
 comments: true
 ---
 

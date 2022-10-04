@@ -3,7 +3,7 @@ layout: post
 title: "How I secure my VPS"
 excerpt: "Configurations for UFW, Fail2ban, SSH and other security tips."
 date: 2022-08-20
-tags: [self-hosting, server, security]
+tags: [self-hosting, security, tutorial]
 comments: true
 ---
 
