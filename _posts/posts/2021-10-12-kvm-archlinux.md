@@ -6,20 +6,20 @@ excerpt: "Have fun and get the most out of your machine."
 tags: [tutorial, arch linux]
 ---
 
-It's time to learn how to install QEMU with KVM, which in my opinion it is the best VM software for GNU/Linux. Why? Mainly because the kernel modules needed for KVM are part of the Linux kernel which means it would not create a mess like VirtualBox, also QEMU used together with KVM can achieve near native performance, and last but not least, they are free and open source unlike VMware.
+So you are interested on QEMU with KVM, which in my opinion it is the best VM software for GNU/Linux. Why? Mainly because the kernel modules needed for KVM are part of the Linux kernel which means it would not create a mess like VirtualBox, also QEMU used together with KVM can achieve near native performance, and last but not least, they are free and open source unlike VMware.
 
 ## Prerequisites
-To check whether virtualization is enabled or supported by your processor, use the following command:
+To check whether virtualization is enabled or supported by your processor, run the following command:
 
 ```
 LC_ALL=C lscpu | grep Virtualization
 ```
 
-It should return `Virtualization: VT-x` for Intel processors and `Virtualization: AMD-V` for AMD processors. If nothing is displayed after this command, it means that either your CPU does not support virtualization or it is not enabled. If your CPU was manufactured in the last 10 years, it should support virtualization, you will need to enter the BIOS to enable it.
+For Intel processors, it should return `Virtualization: VT-x`, and for AMD processors, it should return `Virtualization: AMD-V`. If nothing is displayed after this command, it means that either your CPU does not support virtualization or it is not enabled. If your CPU was manufactured in the last 10 years, it should have virtualization support, you just need to enable it in your BIOS.
 
 ## Installation
 
-To install all needed packages, run the following code:
+To install all the needed packages, run the following command:
 ```
 sudo pacman -S qemu virt-manager ebtables dnsmasq vde2
 ```
@@ -32,7 +32,7 @@ sudo pacman -S qemu virt-manager ebtables dnsmasq vde2
 - Bridge-utils : Network bridge needed for VMs
 - Vde2: Virtual Distributed Ethernet for QEMU and other emulators.
 
-After that, we will need to enable the libvirt service using `sudo systemctl enable --now libvirtd`. You can check the libvirtd service status with `sudo systemctl status libvirtd`. Which should output something similar as below, make sure that it says it is loaded and active.
+After that, you will need to enable the libvirt service using `sudo systemctl enable --now libvirtd`. You can check the libvirtd service status with `sudo systemctl status libvirtd`, which should output something similar as below, make sure that it says it is loaded and active.
 ```
 ● libvirtd.service - Virtualization daemon
      Loaded: loaded (/usr/lib/systemd/system/libvirtd.service; enabled; vendor preset: disabled)
@@ -50,7 +50,7 @@ TriggeredBy: ● libvirtd-admin.socket
              └─1685157 /usr/bin/libvirtd --timeout 120
 ```
 
-By default only the root can create and manage virtual machines. In order to use KVM with your standard user, you should add your user to the libvirt group with:
+By default only the root can create and manage virtual machines. In order to use KVM with your standard user, you can add your user to the libvirt group with:
 ```
 sudo usermod -G libvirt -a user_name
 ```
@@ -62,10 +62,10 @@ Open "virt-manager" and select the "+" button:
 If you have an ISO already installed, select the first option, "Local install media" and click "Forward".
 ![2021-10-11-19:18:07](https://user-images.githubusercontent.com/34800654/136854852-955f43bf-c1d5-46ac-8c05-ed1997e327c4.png)
 
-Next we will select "Browse" and choose our downloaded ISO, also if the automatic detection of the operating system did not work, you will need to uncheck the option "Automatically detect from the installation media/source" and manually select it.
+Next you can select "Browse" and choose your downloaded ISO, also if the automatic detection of the operating system did not work, you will need to uncheck the option "Automatically detect from the installation media/source" and manually select it.
 ![2021-10-11-19:20:17](https://user-images.githubusercontent.com/34800654/136854853-59b8b624-dc62-42c1-b09c-4831264218f1.png)
 
-Now we will choose the amount of RAM and CPU cores we will allocate for this VM, if you just want to test out a Linux distribution, 4GB RAM and 2 cores will be more than enough.
+Now you can choose the amount of RAM and CPU cores you want to allocate for this VM, if you just want to test out a Linux distribution, 4GB RAM and 2 cores will be more than enough.
 ![2021-10-11-19:21:07](https://user-images.githubusercontent.com/34800654/136854854-c51b85b1-a543-4ca0-afe4-391525dcb541.png)
 
 Then choose the desired disk size for the Virtual Machine.
@@ -119,7 +119,8 @@ Now select the "+" button in order to create a snapshot:
 Finally, choose a name and write a description for your snapshot.
 ![2021-10-12-14:17:40](https://user-images.githubusercontent.com/34800654/136954625-b46a1401-5f8b-41c7-9039-7df5667a1846.png)
 
-If you are user of VirtualBox... Good news! You can convert an existing VirtualBox `.vdi` snapshot format into a compatible `.qcow2` snapshot format that virt-manager uses. Use this command:
+If you are a VirtualBox user... Good news! You can convert an existing VirtualBox `.vdi` snapshot format into a compatible `.qcow2` snapshot format that virt-manager uses. Use this command for the conversion:
+
 ```
 sudo qemu-img convert -f vdi -O qcow2 virtualboximagelocation targetlocation
 
