@@ -12,11 +12,14 @@
 					{% if site.email %}<li>
                         <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square fa-fw"></i> Email</a>
                     </li>{% endif %}
+					{% if site.matrix %}<li>
+                        <a href="https://matrix.to/#/@{{ site.matrix }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment fa-fw"></i> Matrix</a>
+                    </li>{% endif %}
                     {% if site.github-url %}<li>
                         <a href="http://github.com/{{ site.github-url }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-fw"></i> Github</a>
                     </li>{% endif %}
 					{% if site.rss %}<li>
-                        <a href="{{ site.url }}/feed.xml" target="_blank" rel="noopener noreferrer" download><i class="fa fa-fw">&#xf09e; </i> RSS</a>
+                        <a href="{{ site.url }}/feed.xml" target="_blank" rel="noopener noreferrer" download><i class="fas fa-rss fa-fw"></i> RSS</a>
                     </li>{% endif %}
 					<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">Learn More</span></a></li>
 
