@@ -57,6 +57,7 @@ github-url:         FuzzyGrim
 rss:                true
 umami:              umami.fuzzygrim.com
 kofi:               fuzzygrim
+matrix:             fuzzygrim:matrix.org
 monero:
   address:          84QRpjRZhXqebshV4PQJhCgAhPWpRLp4nezGDDTUzzYYP7rvwXsM3htdpQdtfxwTnybZcowphp9EG2aPxDFYaFgVD7Xmbng
   qr:               '../../assets/img/monero.png'
