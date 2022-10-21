@@ -711,7 +711,7 @@ cftoken = TOKEN
 Yoi will need to change the value of `cfuser` and `cftoken` with your Cloudflare's account mail and Global API Key respectively.
 
 
-### Authelia
+### Fail2ban for Authelia
 Now it is time to define the filters for Authelia's log file, which should contain a regex pattern that detects an authentification error. You can try to create your own regex pattern but usually in your application's documentation or forums you should find a regex pattern for Fail2Ban. In the case of Authelia, it is included in their official [documentation](https://www.authelia.com/docs/security/measures.html#more-protections-measures-with-fail2ban).
 
 To create a filter for Authelia, create `./data/filter.d/authelia.conf` with the following lines:
@@ -755,6 +755,8 @@ To unban yourself, go to the Cloudflare dashboard > Security > Tools and remove 
 ![cloudflare-ban-2](https://user-images.githubusercontent.com/34800654/166558001-ae0b9222-f271-48e0-a205-015ba4619d94.png)
 
 That should get you unbanned at Cloudflare level, but Fail2Ban keeps a list of banned IPs and you will have to delete your IP from that list as well, to do that, run: `docker exec fail2ban fail2ban-client unban <IP>`.
+
+## Examples
 
 And that's all, now you should look how to apply Fail2ban for your services. The last thing I will leave you with is two more examples with [Nextcloud](https://github.com/linuxserver/docker-nextcloud) and [Vaultwarden](https://github.com/dani-garcia/vaultwarden), two of the most popular self-hosting applications.
 
