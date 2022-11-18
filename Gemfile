@@ -7,3 +7,4 @@ gem 'jekyll-mentions'
 gem 'jekyll-feed'
 gem 'kramdown-parser-gfm'
 gem 'jekyll-redirect-from'
+gem "webrick"
