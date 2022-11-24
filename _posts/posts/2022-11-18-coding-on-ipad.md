@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Replacing my MacBook with an iPad"
+title: "Programming on an iPad"
 date: 2022-11-18
 excerpt: "VSCode and Neovim setup on iPad"
 tags: [docker, tutorial, programming]
