@@ -52,7 +52,10 @@
     {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
     <style type="text/css">.feature {background-image:url({{ feature }});}</style>
     {% endif %}
-
+    <!-- Umami -->
     {% if site.umami %}
         <script async defer data-website-id="261f0d5e-e852-4cdf-b10d-47b2af4de23d" src="https://{{ site.umami }}/fuzzy.js"></script>
     {% endif %}
+    <!-- Security -->
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
