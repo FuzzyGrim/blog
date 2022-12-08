@@ -6,11 +6,11 @@ excerpt: 'The "endgame" is a lie.'
 tags: [keyboards]
 ---
 
-The first keyboard I bought was the [Akko 3084](https://www.amazon.es/gp/product/B0899YGQ7S), mainly because it looked good. 
+The first keyboard I bought was the [Akko 3084](https://www.amazon.es/gp/product/B0899YGQ7S), mainly because I liked the way it looked.
 
 <img src="https://user-images.githubusercontent.com/34800654/206147256-2f5b7352-935c-4ef2-8974-703ae1595f56.jpg" style="width:30em; max-height:100%">
 
-My initial impressions were great, however, after a while of use, I noticed that some of the keys were making a pinging sound that started to get more annoying every day. So, as usual, I searched for how to fix this problem and found [r/MechanicalKeyboards](https://old.reddit.com/r/MechanicalKeyboards/), a subreddit dedicated to this hobby. The main solutions provided by users were to disassemble the keyboard and add foam or desolder the switches and lubricate the springs. However, the Akko could not be [disassembled](https://www.youtube.com/watch?v=v437MTktIpg) and isn't hotswap. So, this time I decided to inquire about keyboards and get a better one. This post is a summary of what I learned during the process, the keyboard I ended up buying and my impressions.
+My initial impressions were good, however, after a while of use, I noticed that some of the keys were making a pinging sound that started to get more annoying every day. So, as usual, I searched for how to fix this problem and found [r/MechanicalKeyboards](https://old.reddit.com/r/MechanicalKeyboards/), a subreddit dedicated to this hobby. The main solutions provided by users were to disassemble the keyboard and add foam or desolder the switches and lubricate the springs. However, the Akko could not be [disassembled](https://www.youtube.com/watch?v=v437MTktIpg) and isn't hotswap. So, this time I decided to inquire about keyboards and get a better one. This post is a summary of what I learned during the process, the keyboard I ended up buying and my impressions.
 
 # What I looked for
 
