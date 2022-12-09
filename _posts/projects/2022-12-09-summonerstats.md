@@ -8,16 +8,6 @@ tag:
 - python
 ---
 
-<br />
-
-<p align="center">
-  <img src="https://github.com/FuzzyGrim/SummonerStats/raw/master/api/static/favicon/android-chrome-192x192.png" />
-</p>
-
-
-<h3 align="center">SummonerStats</h3>
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
