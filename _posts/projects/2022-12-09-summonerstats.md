@@ -17,19 +17,13 @@ tag:
 
 <h3 align="center">SummonerStats</h3>
 
-<p align="center">
-  <a href="https://github.com/FuzzyGrim/SummonerStats/issues">Report Bug</a>
-  ·
-  <a href="https://github.com/FuzzyGrim/SummonerStats/issues">Request Feature</a>
-</p>
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 ![screenshot](https://github.com/FuzzyGrim/SummonerStats/raw/master/api/static/assets/screenshot.png)
 
-SummonerStats is a site that provides League of Legends summoner's stats.
+[SummonerStats](https://github.com/FuzzyGrim/SummonerStats) is a site that provides League of Legends summoner's stats.
 
 ### Built With
 
