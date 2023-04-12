@@ -749,7 +749,7 @@ With this configuration, you are telling Fail2ban to use the log file located in
 
 ***
 
-To unban yourself, go to the Cloudflare dashboard > Security > Tools and remove the entry:
+To unban yourself, go to the Cloudflare dashboard > Security > WAF > Tools and remove the entry:
 
 ***
 ![cloudflare-ban-2](https://user-images.githubusercontent.com/34800654/166558001-ae0b9222-f271-48e0-a205-015ba4619d94.png)
