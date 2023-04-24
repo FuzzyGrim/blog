@@ -54,7 +54,7 @@
     {% endif %}
     <!-- Umami -->
     {% if site.umami %}
-        <script async defer data-website-id="261f0d5e-e852-4cdf-b10d-47b2af4de23d" src="https://{{ site.umami }}/fuzzy.js"></script>
+        <script async src="{{ site.umami.url }}" data-website-id="{{ site.umami.site_id }}"></script>
     {% endif %}
     <!-- Security -->
     <meta name="referrer" content="no-referrer">

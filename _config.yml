@@ -55,7 +55,9 @@ defaults:
 email:              fuzzygrim@protonmail.com
 github-url:         FuzzyGrim
 rss:                true
-umami:              umami.fuzzygrim.com
+umami:              
+  url:              https://umami.fuzzygrim.com/fuzzy.js
+  site_id:          261f0d5e-e852-4cdf-b10d-47b2af4de23d
 kofi:               fuzzygrim
 matrix:             fuzzygrim:matrix.org
 monero:
