@@ -3,7 +3,7 @@ layout: post
 title: "Hosting a Minecraft Server with Docker"
 date: 2023-02-16
 excerpt: "A simple guide to setup your minecraft server with a lightweight proxy"
-tags: [keyboards]
+tags: [self-hosting, tutorial]
 ---
 
 Although I have hosted a Minecraft server before, it was quite some time ago when I wasn't into selfhosting, I remember watching some random youtube tutorial and opening a port without thinking twice about the security implications. Now, I got interested in Minecraft again and wanted to host a server for me and my friends, but this time hosting it the right way.

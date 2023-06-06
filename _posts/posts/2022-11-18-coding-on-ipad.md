@@ -3,7 +3,7 @@ layout: post
 title: "Programming on an iPad"
 date: 2022-11-18
 excerpt: "VSCode and Neovim setup on iPad"
-tags: [docker, tutorial, programming]
+tags: [self-hosting, tutorial, programming]
 ---
 
 Why would you do that, you might ask. Basically, for the last year, I used a MacBookPro for my studies, but its keyboard and trackpad stopped working constantly. Although it seems to be a pretty [common](https://search.brave.com/search?q=fix+macbook+pro+2015+keyboard+trackpad) problem for the laptop I had, I couldn't fix it with the usual trick of changing the ribbon cable. So I decided to try using the 2017 iPad I already used to take my math and physics notes for everything I did on the laptop. Although there were some struggles on the trip, I am satisfied with my current setup, so I decided to write this post to share my experience.
