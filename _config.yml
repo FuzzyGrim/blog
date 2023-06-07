@@ -60,9 +60,6 @@ umami:
   site_id:          261f0d5e-e852-4cdf-b10d-47b2af4de23d
 kofi:               fuzzygrim
 matrix:             fuzzygrim:matrix.org
-monero:
-  address:          84QRpjRZhXqebshV4PQJhCgAhPWpRLp4nezGDDTUzzYYP7rvwXsM3htdpQdtfxwTnybZcowphp9EG2aPxDFYaFgVD7Xmbng
-  qr:               '../../assets/img/monero.png'
 
 # Gems
 plugins:

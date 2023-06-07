@@ -43,22 +43,6 @@ layout: compress
                     <div id="commento"></div>
                 {% endif %}
                 {% include meta.html %}
-                <div id="donate" class="overlay">
-                    <div class="popup">
-                        <a class="close" href="#return">&times;</a>
-                        <div style="margin-top: 10px;"></div>
-                            {% if site.monero %}
-                                <h2>Monero address</h2>
-                                <p>{{ site.monero.address }}</p>
-                                <img src="{{ site.monero.qr }}">
-                            {% endif %}
-                            {% if site.kofi %}
-                            <h2>Ko-Fi</h2>
-                            <a href="https://ko-fi.com/{{ site.kofi }}"><p style="text-align:center">https://ko-fi.com/{{ site.kofi }}</p></a>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
