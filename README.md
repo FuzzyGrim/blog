@@ -2,7 +2,7 @@
 
 Link to my [website](https://www.fuzzygrim.com), powered by [Jekyll](https://jekyllrb.com/) and hosted with [Cloudflare Pages](https://pages.cloudflare.com/).
 
-This blog uses the [Moon](https://github.com/TaylanTatli/Moon) theme, although I have made some modifications to it. Some notable changes include:
+This blog is a fork of the [Moon](https://github.com/TaylanTatli/Moon) theme with some notable changes such as:
 
   - Add post date and reading time in post list ([commit](https://github.com/FuzzyGrim/blog/commit/46494adc9902aa8d10f033cbe896817fbc97700a))
   - Add project category ([commit](https://github.com/FuzzyGrim/blog/commit/32578a4d6ad586eeff253ec37a165f7c95e27565))
