@@ -18,4 +18,17 @@ After getting the WireGuard configuration files from the Windscribe website, mov
 
 Once this is done, you are ready to connect to the server, do it by simply running the command: `sudo wg-quick up copenhagen`, and to disconnect, you can use: `sudo wg-quick down copenhagen`.
 
+---
+**⚠ INFO:**
+
+If you are getting something like:
+
+> `/usr/bin/wg-quick: line 32: resolvconf: command not found`
+
+On Arch Linux, you will need to install the `systemd-resolvconf` package.
+
+On Debian, you will need to install the `openresolv` package.
+
+---
+
 Finally, if you want to configure the VPN interface to be persistent across reboots, you can do so by enabling it as a service with: `sudo systemctl enable wg-quick@copenhagen`.
