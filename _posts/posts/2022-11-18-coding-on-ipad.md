@@ -219,4 +219,4 @@ However, there have been tradeoffs, for example, sometimes I find myself wishing
 
 Overall, while it's not perfect, I'm happy with the setup, as I think it has done a good job of replacing my laptop for most of my college work. I think it's a perfect mobile device for coding on the go, but it really can't replace a primary development machine.
 
-I hope you found this guide helpful and if you have any questions or comments, feel free to drop me an [email](mailto:fuzzygrim@protonmail.com) or send me a message with Matrix at [@fuzzygrim:matrix.org](https://matrix.to/#/@fuzzygrim:matrix.org).
+I hope you found this guide helpful and if you have any questions or comments, feel free to drop me an [email](mailto:contact@fuzzygrim.com) or send me a message with Matrix at [@fuzzygrim:matrix.org](https://matrix.to/#/@fuzzygrim:matrix.org).

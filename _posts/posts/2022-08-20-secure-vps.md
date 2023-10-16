@@ -184,4 +184,4 @@ sudo fail2ban-client status sshd
 ```
 
 ## Conclusion
-And that would be it! This is how I am currently protecting my server, what do you think? If you have any suggestions, please let me [know](mailto:fuzzygrim@protonmail.com).
+And that would be it! This is how I am currently protecting my server, what do you think? If you have any suggestions, please let me [know](mailto:contact@fuzzygrim.com).
