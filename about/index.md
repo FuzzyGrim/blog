@@ -5,9 +5,7 @@ tags: [about]
 date: 2021-06-21
 ---
 
-## Welcome to my home on the web!
-
-### Who am I?
+## Who am I?
 
 I'm Xila, a computer science student who codes mainly in Python. These are my main interests, and what I will probably write about:
 -   Linux
@@ -18,7 +16,7 @@ I'm Xila, a computer science student who codes mainly in Python. These are my ma
 -   Online privacy and security
 -   Mechanical keyboards
 
-### About this website
+## About this website
 
 I’ve always wanted to have my own website, so here it is. This blog is created using [Jekyll](https://jekyllrb.com), a static blog generator, and is currently being hosted with [Cloudflare Pages](https://pages.cloudflare.com/). I have created this space to share some thoughts and ideas from my daily life or anything interesting I have learned. 
 
