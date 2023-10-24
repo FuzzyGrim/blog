@@ -6,9 +6,9 @@ excerpt: "So many options, so few that meet my requirements"
 tags: [privacy, blog]
 ---
 
-I have decided that it’s time for me to take control of my emails, this means using my own domain, using whatever email client I want and being able to easily switch providers if I want to. Although this has been on my mind for a while, I’ve been putting it off because I didn’t want to deal with the hassle of updating all my accounts with the new email address…
+I have decided it’s time to take control over my emails, this means using my own domain, using whatever email client I want and being able to easily switch providers if I want to. Although this has been on my mind for a while, I’ve been putting it off because I didn’t want to deal with the hassle of updating all my accounts with the new email address…
 
-My requirements are:
+Here is a list of my requirements for an email service:
 
   - Custom domain support, this is a must and the main reason I’m doing this. The advantage of using a custom domain is that I can easily switch providers without any hassle, as all my online accounts will be linked to my domain and not to the provider.
 
@@ -27,7 +27,6 @@ My requirements are:
   - Good privacy, my threat model is not that high with email, I just don’t want my emails to be scanned for ads or sold to third parties.
 
   - This is optional, but I would like to have an API or some way to easily create new aliases. For example, Bitwarden has some integration with some services to automatically create new aliases when signing up for a new service. I would like to be able to do something similar with my email provider.
-
 
 I have been researching different email providers for a while and read many posts and comments on multiple sites and forums, and even tried some of them. I have compiled in this post a list of the most popular ones and my thoughts on them.
 
@@ -51,7 +50,6 @@ For custom domain support you have to pay €36 per year, in this plan they supp
 
 Tutanota doesn't have a bridge like Proton Mail, which means you have to use their web or mobile app. Their webmail UI isn't great and was one of the main reasons I moved to Proton Mail. I also had issues before with their iOS app, like not being able to log in and sometimes automatically logging out.
 
-
 ## Fastmail
 
 [Fastmail](https://www.fastmail.com/) is a well known email provider and is quite reputable among tech-savvy users. They offer a reliable service with up to 600 aliases for custom domain in their $50 per year plan, which at the moment considering taxes is around €58 per year, which is quite expensive for me.
@@ -62,7 +60,7 @@ The main problem I have found is that they are based in Australia, which has a [
 
 ## mailbox.org
 
-[mailbox.org](https://mailbox.org/en/) is also a well known email provider among privacy-conscious people, they have a long experience in the field and have provided solid email services for many years. Their standard plan is €36 per year, allows multiple custom domains and have IMAP/SMTP support. 
+[mailbox.org](https://mailbox.org/en/) is also a well known email provider among privacy-conscious people, they have a long experience in the field and have provided solid email services for many years. Their standard plan is €36 per year, allows multiple custom domains and have IMAP/SMTP support.
 
 The main problem I have found feature-wise is that they only allow 50 aliases in this plan, which is not enough for me and the next plan which allows 250 aliases costs €108 per year, which is expensive for me.
 
@@ -70,9 +68,9 @@ Something strange I have found with their service is that it seems that their SM
 
 ## Posteo
 
-[Posteo](https://posteo.de/en) is another reputable and privacy-oriented service, it's also one of the [cheapest](https://posteo.de/en) options at €12 per year and supports external email clients with IMAP/SMTP. 
+[Posteo](https://posteo.de/en) is another reputable and privacy-oriented service, it's also one of the [cheapest](https://posteo.de/en) options at €12 per year and supports external email clients with IMAP/SMTP.
 
-One thing to note about their service is that, you don't have a spam folder, so you can't manage your own spam. They manage spam centrally, which could be a problem because it would mean that you won't receive any email that they consider spam. 
+One thing to note about their service is that, you don't have a spam folder, so you can't manage your own spam. They manage spam centrally, which could be a problem because it would mean that you won't receive any email that they consider spam.
 
 Apart from this, the real dealbreaker for me, is that they don't support custom domains, which is the main reason I'm doing this. It doesn't seem like they have [any plans to support custom domains](https://posteo.de/en/site/faq#owndomains) in the future, so I had to discard them.
 
@@ -88,7 +86,7 @@ While I think I can get by with 20 emails a day, since I don't usually send that
 
 Their pricing is based solely on storage space, on their small plan they offer 10GB of storage with unlimited domains and email addresses for $49 per year, and they offer a [Lifetime plan](https://accounts.mxroute.com/index.php?/news/view/53/lifetime-plan/) for $129 which seems like a great deal. Of course, lifetime means the lifetime of MXroute, which who knows for how long they will be around.
 
-They seem to be popular on [LowEndTalk](https://lowendtalk.com/), as they have offered some great deals there in the past, such as [100GB for $40 per year](https://lowendtalk.com/discussion/184324/mxroute-email-hosting-new-large-storage-plans) or a [10GB for $10 per year](https://lowendtalk.com/discussion/182750/mxroute-email-hosting-black-friday-2022) on Black Friday. 
+They seem to be popular on [LowEndTalk](https://lowendtalk.com/), as they have offered some great deals there in the past, such as [100GB for $40 per year](https://lowendtalk.com/discussion/184324/mxroute-email-hosting-new-large-storage-plans) or a [10GB for $10 per year](https://lowendtalk.com/discussion/182750/mxroute-email-hosting-black-friday-2022) on Black Friday.
 
 They support the basic email protocols such as IMAP/SMTP, and they offer multiple webmail clients such as [Rainloop](https://www.rainloop.net/) and [Roundcube](https://roundcube.net/) and [Crossbox](https://crossbox.io/). Also, this year [they added support for push notifications on iOS](https://headwayapp.co/mxroute-changelog/push-notifications-on-ios-255875), which a big plus as most providers don't support this.
 
