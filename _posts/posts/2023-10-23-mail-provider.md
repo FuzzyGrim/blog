@@ -2,7 +2,7 @@
 layout: post
 title: "My search for a new email provider"
 date: 2023-10-23
-excerpt: "So many options, so few that meet my requirements"
+excerpt: "So many options but so few that meet my requirements"
 tags: [privacy, blog]
 ---
 
