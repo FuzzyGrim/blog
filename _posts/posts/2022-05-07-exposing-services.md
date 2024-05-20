@@ -561,8 +561,8 @@ Through the same tunnel, you can route multiple applications. In the example abo
 Once you have finished, you will need to assign a CNAME record that points traffic to your tunnel. To do that you will need to run the following command for each hostname you included in `~/.cloudflared/config.yml`: 
 
 ```bash
-# cloudflared tunnel route dns <UUID or NAME> <hostname>
-cloudflared tunnel route dns 'homelab' auth.domain.com
+# cloudflared tunnel route dns <UUID or NAME> <subdomain>
+cloudflared tunnel route dns 'homelab' auth
 ```
 
 Finally, start `cloudflared` as service, so whenever you reboot your system it will start routing traffic automatically:
