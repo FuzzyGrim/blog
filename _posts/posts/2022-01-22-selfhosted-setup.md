@@ -20,12 +20,12 @@ My budget was around 300€, and I was looking for something small and quiet bec
 
 I wanted an SSD for the OS, and since the PC didn't seem to have space for another internal drive, I bought a 500GB external SSD from [Samsung](https://www.amazon.es/Samsung-T5-500GB-Estado-Externo/dp/B074MCM721) for 75€. The 1TB hard drive that came with the PC was going to be used for NextCloud and I already had a 1TB external hard drive for backups. Finally, I wanted another drive to store my media server, so I went with a 2TB [WD Elements](https://www.amazon.es/WD-Elements-Disco-Externo-port%C3%A1til/dp/B06W55K9N6) for 60€. This added up to a total price of 200€.
 
-![Photo 22-01-24 13-50-54 6159](https://user-images.githubusercontent.com/34800654/150787370-f90ab96f-6319-4545-a88f-d943804ad747.jpg)
+![pc](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-01-21-selfhosted-setup/pc.jpg)
 
 ## Operating System
 At first, I was thinking of using Debian or Ubuntu Server, however after reading different posts on [r/homelab](https://www.reddit.com/r/homelab) and [r/selfhosted](https://www.reddit.com/r/selfhosted/) I was convinced to try Proxmox. My current setup, after learning how to use Proxmox and seeing multiple comparisons on VM vs LXC, is:
 
-![Proxmox](https://user-images.githubusercontent.com/34800654/150637015-4bee6673-58db-4262-b919-a60d87c570f8.png)
+![Proxmox](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-01-21-selfhosted-setup/Proxmox.png)
 
 I basically have 4 LXC containers:
 
@@ -49,7 +49,7 @@ A simple and beautiful dashboard, I use it mainly as a way to see all my current
 
 You can see most of the services I am hosting with my Heimdall dashboard:
 
-![Heimdall](https://user-images.githubusercontent.com/34800654/150653597-a592ceea-98f4-4f7a-a801-31574e4ef95a.png)
+![Heimdall](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-01-21-selfhosted-setup/Heimdall.png)
 
 ```yml
 version: "2.1"
@@ -72,7 +72,7 @@ services:
 ### Media Server
 The main reason I wanted to start self-hosting, it can automatically download the necessary episodes as they are released.
 
-![Jellyfin](https://user-images.githubusercontent.com/34800654/150637727-4792757b-84b3-4b73-ade7-a85478cdaa10.png)
+![Jellyfin](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-01-21-selfhosted-setup/Jellyfin.png)
 
 It is composed by a stack with Jellyfin, Sonnar, Radarr, Bazarr and Ombi and another stack with Prowlarr and Transmission because they are hosted in different LXC containers:
 
@@ -197,7 +197,7 @@ services:
 
 I don't monitor a lot of data and I don't look at it very often but I think it came out pretty good.
 
-![Grafana](https://user-images.githubusercontent.com/34800654/150647728-ade4fc35-0073-4c96-93f6-0abb0b08e93f.png)
+![Grafana](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-01-21-selfhosted-setup/Grafana.png)
 
 Although the full configuration of the monitoring stack is beyond the scope of this post, the main docker-compose file is a stack with Grafana, Loki, Promtail and Prometheus. I install Netdata separately with this command: `bash <(curl -Ss https://my-netdata.io/kickstart.sh)`.
 
@@ -256,7 +256,7 @@ services:
 
 An elegant wiki software, I use it for documentation and note-taking.
 
-![BookStack](https://user-images.githubusercontent.com/34800654/150647786-711a033e-afd7-4a91-8b35-ab716da203b7.png)
+![BookStack](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-01-21-selfhosted-setup/BookStack.png)
 
 ```yml
 version: "2"
@@ -315,7 +315,7 @@ services:
 ### Nextcloud
 Probably the most popular self-hosted application, I'm using it for cloud storage, CalDAV, CardDAV, Kanban, Bookmarks and Notes. Although I've seen people complaining about the slowness of the software and the difficulty in configuring it, I haven't had any problems with my hardware.
 
-![Nextcloud](https://user-images.githubusercontent.com/34800654/150647833-b7359354-c000-4cb0-9da7-b1b20cbe878f.png)
+![Nextcloud](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-01-21-selfhosted-setup/Nextcloud.png)
 
 ```yml
 version: "3.7"
@@ -355,7 +355,7 @@ services:
 ### Duplicati
 Duplicati is my go-to backup tool, I use it to back up to my 1TB external drive and MEGA.NZ as I currently don't have much data to back up. I am thinking of using BlackBlaze B2 in the future once my data is big enough.
 
-![Duplicati](https://user-images.githubusercontent.com/34800654/150647822-6274cd5e-1b64-41d7-bb50-b3ded8f58ec7.png)
+![Duplicati](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-01-21-selfhosted-setup/Duplicati.png)
 
 ```yml
 version: "2.1"

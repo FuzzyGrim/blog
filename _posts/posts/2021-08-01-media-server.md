@@ -24,11 +24,11 @@ After installing Jellyfin, you should first find out the IP of your server. On M
 
 Now start Jellyfin and navigate in your browser to <http://your-server-ip:8096>. You should see an output like the following: 
 
-![intro](https://user-images.githubusercontent.com/34800654/127638294-1a55f7bc-203b-4f1d-8c64-57cea243a151.png)
+![intro](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/welcome-jellyfin.png)
 
 Choose your language and click next. On the next screen, create a user and enter a password of your choice. The next page asks you to set up your media libraries. If you already have something downloaded, you can import it here. Choose the type of content (i.e. audio, video, movies etc.), enter the display name and click the plus (+) sign next to the folders icon to choose the location to save your media files.
 
-![media](https://user-images.githubusercontent.com/34800654/127638456-629794ac-c89d-4535-b576-0ee052431ef6.png)
+![media](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/jellyfin-library.png)
 
 Then click next to all of the following prompts and once you log in, you should see your previously imported media files.
 
@@ -45,7 +45,7 @@ It will insert a UTF-8 [byte order mark](https://wikiless.org/wiki/Byte_order_ma
 
 If you want to change anything or reconfigure, click on the three horizontal bars from the Home screen and go to Dashboard. I would recommend adding a new user for your guests, to do this, click the add button and create a new user, you can create a new user without a password if you want.
 
-![guest](https://user-images.githubusercontent.com/34800654/127638487-ca3fb107-4c39-4874-8915-cd34aefb6723.png)
+![guest](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/jellyfin-users.png)
 
 You can access this Jellyfin media server from any systems or device such as mobile phone, tablet or pc by going to <http://your-server-ip:8096>. 
 
@@ -59,27 +59,27 @@ To start configuring these two apps, go to Settings > Media Management:
 
 Click on "Show advanced":
 
-![show-advanced](https://user-images.githubusercontent.com/34800654/127638582-91321adb-44e7-4d6c-a504-faa02325a5bc.png)
+![show-advanced](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/radarr-icons.png)
 
 And here are my settings for reference:
 
-![media-management](https://user-images.githubusercontent.com/34800654/127642257-f6d2a2d7-36cc-4e73-ae36-9f0863e20838.png)
+![media-management](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/radarr-settings-1.png)
 
-![media-management-2](https://user-images.githubusercontent.com/34800654/127642314-e494fc8f-15f6-4c97-9f1b-c4788366f12f.png)
+![media-management-2](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/radarr-settings-2.png)
 
-![media-management-3](https://user-images.githubusercontent.com/34800654/127642834-74f8c34c-b370-46cf-92c0-4c6ed6e79ba1.png)
+![media-management-3](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/radarr-settings-3.png)
 
-![media-management-4](https://user-images.githubusercontent.com/34800654/127642447-6d2e3976-1ce1-41f3-bef7-bb7351077d32.png)
+![media-management-4](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/radarr-settings-4.png)
 
 Remember to do the same in both applications. If you prefer to watch your media in the original language, in Radarr go to Settings > Profiles and change "Language" to Original, however this option isn't available in Sonarr. Here you can also decide if you want these two apps to download a higher quality video once it's available:
 
-![profile](https://user-images.githubusercontent.com/34800654/127638683-5eaa844f-578c-4868-bc6b-997d00030b18.png)
+![profile](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/radarr-settings-5.png)
 
 <hr>
 
 Now let's configure Prowlarr, once installed, launch the application and go to <http://your-server-ip:9696>. You should be see something like this:
 
-![prowlarr-intro](https://user-images.githubusercontent.com/34800654/127785792-4a61c9f0-97bf-4200-aea0-b7c774e97b1a.png)
+![prowlarr-intro](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/prowlarr.png)
 
 Now to add your favorite sites, click on the button that says "Add Indexer" and search for your desired sites. You can usually leave all the fields with the default value and test if everything is working correctly with the button at the bottom before saving it.
 
@@ -87,13 +87,13 @@ To sync these indexers with Sonarr and Radarr, in Prowlarr go to the Settings > 
 
 Finally, the last thing to configure will be the torrent client, I will be using [Transmission](https://transmissionbt.com/download/), but you can use your preferred torrent client. You will need to allow external connections in Transmission, to do this, go to Preferences > Remote and check the box that says "Allow remote access", you can also set a username and password there but you can leave it blank if you wish.
 
-![transmission](https://user-images.githubusercontent.com/34800654/127638756-f2ea8112-8171-4db8-ae03-2184a64c1d3e.png)
+![transmission](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/transmission.png)
 
 After doing that, go to Settings > Download Clients in Sonarr and Radarr, click on the add button and select Transmission or your preferred BitTorrent client. There you will put a name like "Transmission" and change the Host to your server IP. You can test it to see if it's working.
 
 Now, you can import your library in Movies/Series > Library Import. After importing your library, it's time to add some movies or shows you want, to do that, go to Movies/Series > Add New and search for your shows or movies. Finally, for your Series, go to Series > select your added show and click on the search button for the season you want to download. You can also search manually by clicking on the person icon next to the search icon.
 
-![download-series](https://user-images.githubusercontent.com/34800654/127644257-55aa3ac6-743b-4d8a-a485-7918313dd5c9.png)
+![download-series](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-08-01-media-server/sonarr.png)
 
 ## Wrapping Up
 

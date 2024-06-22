@@ -8,7 +8,7 @@ tags: [keyboards]
 
 The first keyboard I bought was the [Akko 3084](https://www.amazon.es/gp/product/B0899YGQ7S), mainly because I liked the way it looked.
 
-<img src="https://user-images.githubusercontent.com/34800654/206147256-2f5b7352-935c-4ef2-8974-703ae1595f56.jpg" style="width:30em; max-height:100%">
+<img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/akko_3084.jpg" style="width:30em; max-height:100%">
 
 My initial impressions were good, however, after a while of use, I noticed that some of the keys were making a pinging sound that started to get more annoying every day. So, as usual, I searched for how to fix this problem and found [r/MechanicalKeyboards](https://old.reddit.com/r/MechanicalKeyboards/), a subreddit dedicated to this hobby. The main solutions provided by users were to disassemble the keyboard and add foam or desolder the switches and lubricate the springs. However, the Akko could not be [disassembled](https://www.youtube.com/watch?v=v437MTktIpg) and isn't hotswap. So, this time I decided to inquire about keyboards and get a better one. This post is a summary of what I learned during the process, the keyboard I ended up buying and my impressions.
 
@@ -18,8 +18,8 @@ As I started getting hooked into the hobby, it became clear to me that I needed 
 
 ## Keyboard kit
 <figure class="half">
-    <img style="margin-right: .2em" src="https://www.ashkeebs.com/wp-content/uploads/2022/03/blkchr-45%E5%B8%A6%E7%A1%85%E8%83%B6_OctaneCamera_a.jpg">
-    <img src="https://www.ashkeebs.com/wp-content/uploads/2022/03/qk65-alu-plt.jpg">
+    <img style="margin-right: .2em" src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/qk65_case.jpg">
+    <img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/qk65-alu-plt.jpg">
     <figcaption style="text-align: center;">QK65</figcaption>
 </figure>
 
@@ -28,8 +28,8 @@ The most important factor when deciding on a keyboard kit is the [form factor](h
 Another important factor is the keyboard layout, with ANSI and ISO being the two most popular: 
 
 <figure class="half">
-    <img style="margin-right: .2em" src="https://deskthority.net/wiki/images/thumb/5/54/ANSI_layout_basic.svg/616px-ANSI_layout_basic.svg.png">
-    <img src="https://deskthority.net/wiki/images/thumb/b/b7/ISO_layout_basic.svg/616px-ISO_layout_basic.svg.png">
+    <img style="margin-right: .2em" src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/ansi.png">
+    <img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/iso.png">
     <figcaption style="text-align: center;">Left: ANSI / Right: ISO</figcaption>
 </figure>
 
@@ -40,15 +40,15 @@ Although not mandatory, I would also like it to have support for [QMK](https://d
 The last thing I looked for was the color of the case, I wanted a black case because it's a great neutral color that matches almost any set of keys and matches the rest of my desktop setup. There are other things to consider but they didn't really matter to me, like bluetooth support, RGB, knobs, etc. By the way, if you want a keyboard with RGB, you'll want to check to see if the switches will be facing north or south.
 
 <figure class="half">
-    <img src="https://imgs.search.brave.com/sE48VkIqXgISD_fLglgn8iESgeiPLgwe4QaRn8d55wA/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly90aGV0/ZWNoZnJvbnRpZXJu/ZXQuZmlsZXMud29y/ZHByZXNzLmNvbS8y/MDIxLzEyL2ltZ180/OTI4LmpwZw">
-    <img src="https://imgs.search.brave.com/Rbmcu2j5wjgyomi8_nBhTBF5rSeQQAyrqq3EQPQw184/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly90aGV0/ZWNoZnJvbnRpZXJu/ZXQuZmlsZXMud29y/ZHByZXNzLmNvbS8y/MDIxLzEyL2ltZ180/OTMxLmpwZw">
+    <img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/north_facing_switches.webp">
+    <img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/south_facing_switches.webp">
 </figure>
 
 With north facing switches, most switches will have interference with Cherry profile keycaps. However, south facing switches will have much less of the RGB shining through the keycaps. So this is something to consider that depends on the switches and keycaps you want.
 
 ## Switches
 
-![switches](https://user-images.githubusercontent.com/34800654/205942610-47470896-a002-422f-badd-0e7a8baac614.png)
+![switches](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/switches.png)
 
 The switches will determine how the keyboard feels and will have a big impact on the sound. They can be divided into three main categories: linear, tactile and clicky. If you have a gaming keyboard, you probably have a linear switch, they are smooth and usually require less force to press. Tactile switches provide feedback when the key is pressed, they are usually a little harder to press and have a bump when pressed. Clicky switches are the loudest, have a bump and produce a sharp click when pressed. Choosing switches will probably be the hardest part, because there are many options and things to consider, such as actuation force, pre-travel, total travel, tactile force, sound, etc. The best way to choose your switches is to test them, either by going to a physical store or buying a [switch tester](https://www.amazon.com/s?k=switch+tester), otherwise, you should read reviews which is what I did. You can find the main data about most switches at [switches.mx](https://switches.mx/) and I would recommend [ThereminGoat's switch reviews](https://github.com/ThereminGoat/switch-scores) to find out which switches are generally considered good.
 
@@ -69,7 +69,7 @@ Most switches usually need some tuning to make them smoother and better sounding
 The keycaps will define the main look of your keyboard, so the most important factor in choosing keys will be whether you like the way they look. If you like RGB, you can opt for [transparent keys](https://es.aliexpress.com/wholesale?catId=0&SearchText=transparent+keys) which will let all the RGB shine through the keys. If you want a more subtle look, you can choose the classic [Black on white](https://www.eloquentclicks.com/product/keychron-black-on-white-doubleshot-pbt-keycap-set/) or [White on black](https://www.eloquentclicks.com/product/keychron-white-on-black-doubleshot-pbt-keycap-set/) keycaps. Or maybe you want to confuse anyone who sees your keyboard with some [Dots](https://candykeys.com/group-buys/gmk-dots) on your keys. You can even opt for [Blank](https://keycapsss.com/keyboard-parts/keycaps/151/np-pbt-blank-keycap-set-iso/ansi?c=16) keycaps if that's your thing.
 
 <figure>
-    <img src="https://user-images.githubusercontent.com/34800654/205949731-952dcc8c-2ceb-4394-87b4-ca67f972723a.png" style="width:30em; max-height:100%">
+    <img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/milkshake_weirdo.png" style="width:30em; max-height:100%">
     <figcaption style="text-align: center;">DSA Milkshake Weirdo</figcaption>
 </figure>
 
@@ -83,18 +83,18 @@ When I searched for "65% budget keyboards", most of the recommendations were the
 
 After searching for a while, I found a Spanish store called [Eloquent Clicks](https://www.eloquentclicks.com/) that had one of the 65% keyboard kits that was also recommended, the [KBD67](https://www.eloquentclicks.com/product/kbd67-lite-r4-diy-kit-mechanical-keyboard/) at 115€ (tax included). As the kit was already close to my budget, I decided to add to the cart some [Gateron Yellow Pro](https://www.eloquentclicks.com/product/gateron-yellow-pro-switches/) from the same store and then I could complete my build with some Olivia keycaps, which look like this:
 
-<img src="https://user-images.githubusercontent.com/34800654/205920403-c6e2c58f-adef-4a7a-8940-a512309cff4b.jpg" style="width:40em; max-height:100%">
+<img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/olivia.jpg" style="width:40em; max-height:100%">
 
 I know, they look gorgeous with a black case, don't they? Unfortunately, they were originally sold as a group buy and at $140, so yes, I had to settle for some [clones](https://es.aliexpress.com/item/1005002081209745.html) from Aliexpress. With this, the whole keyboard would cost about $175, an amount I was willing to pay for a keyboard I would use for many hours a day. But just when I thought I had decided on my future keyboard... I changed my mind. I discovered a layout that I had never seen before and that was not mentioned in any of the guides. It seems to have grown in popularity recently and ever since I saw a build with it on reddit, I knew it was the layout I wanted for my keyboard, so ladies and gentlemen, I present to you the Alice layout:
 
-<img src="https://user-images.githubusercontent.com/34800654/205975187-38677df1-9b35-46c0-85fb-314b16cf4409.jpg" style="width:40em; max-height:100%">
+<img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/alice_layout.jpg" style="width:40em; max-height:100%">
 
 So I started looking for keyboard kits with the Alice layout and found the only budget keyboard in stock with it at the time, the [Akko Alice Plus](https://en.akkogear.com/product/acr-pro-alice-plus-mechanical-keyboard), although there seem to be other alternatives now such as the [Feker Alice](https://es.aliexpress.com/item/1005004705714166.html). It has the same keys as a 65% layout which is just what I wanted. Akko offers the barebones kit at 119€ and the pre-assembled version at 154€ on their European site, for the pre-assembled version they offered a white construction with the switch options of CS Crystal or CS Silver. From what I read, the Crystal switches were too light for most people and the CS Silver was preferred, however, for some reason Akko only offered the CS Crystal in the black version. So the most logical reason was to get the barebones version with the black case.
 
 But then, I had a fantastic idea, the prebuild black case version came with some black keycaps with pink accents that I could mix with my previous [keyboard keycaps](https://www.amazon.es/gp/product/B0899YGQ7S), which coincidentally were also from Akko and used the same ASA profile, to make some high quality Olivia keycaps instead of having to get ones from Aliexpress. Basically it meant that I would be paying 35€ more than the prebuild version, but I would be getting some Olivia keycaps out of it, and the AKKO keycaps included are usually sold separately at 60€. I finally bought it at 140€ thanks to a discount code. Once they arrived, I changed the alpha keycaps and this is how it ended up looking:
 
 <figure>
-    <img src="https://user-images.githubusercontent.com/34800654/205974916-e16e5388-033e-4edb-a0c0-e90af486a461.JPG"  style="width:40em; max-height:100%">
+    <img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/akko_alice_plus.JPG"  style="width:40em; max-height:100%">
     <figcaption style="text-align: center;">I need another white "B", but otherwise it looks pretty good to me.</figcaption>
 </figure>
 
@@ -220,4 +220,4 @@ There are times when I also want to use the "Control" key with the arrow keys, s
 
 I'm really happy with my keyboard, it's a great keyboard for the price and I love the sound of it, I now just enjoy typing. It was a really fun experience to learn about the world of mechanical keyboards and I'm happy to find another interesting hobby. With this keyboard I can easily try out other switches, such as the Boba U4T which I've heard great things about, but after discovering the "Alice" layout, I have delved down another rabbit hole within the mechanical keyboard hobby, the ergo keyboard rabbit hole. Sadly and and not surprisingly, this means that I already have some plans for my next keyboard and the current one will not be my "endgame".
 
-<img src="https://user-images.githubusercontent.com/34800654/206031760-5e746c43-1817-4281-9b55-62f99db7bb07.jpg" style="width:35em; max-height:100%">
+<img src="https://cdn.fuzzygrim.com/file/fuzzygrim/2022-12-07-mechanical-keyboards/meme.jpg" style="width:35em; max-height:100%">

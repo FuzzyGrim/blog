@@ -62,7 +62,7 @@ apt install -y openjdk-17-jdk openjdk-17-jre
 
 It works quite well as a PWA which is what the developers [recommends](https://github.com/coder/code-server/blob/main/docs/ipad.md). However, code-server seems to have a [issue](https://github.com/microsoft/vscode/issues/149048) with iOS floating shortcut bar which forced me to disable it. But anyway, this is an image of what code-server looks like.
 
-![coder-pwa](https://user-images.githubusercontent.com/34800654/202573573-3516d009-724d-462c-aaf3-897cbe1b6139.jpg)
+![coder-pwa](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-11-12-ipad-programming/coder-pwa.jpg)
 
 ## Neovim
 
@@ -80,7 +80,7 @@ For remote access to my server, I am using [Wireguard](https://www.wireguard.com
 
 I am managing Wireguard with [wg-easy](https://github.com/WeeJeWel/wg-easy), it is easy to install with docker and gives you a web GUI to manage your clients, it also has a nice feature that allows you to generate QR codes for your clients, which is useful for mobile devices. 
 
-![wg-easy](https://user-images.githubusercontent.com/34800654/201925082-97a7d155-f158-4d97-bd2d-afe3a12dc6c2.png)
+![wg-easy](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-11-12-ipad-programming/wg-easy.png)
 
 This is my docker-compose file:
 
@@ -207,9 +207,9 @@ local config = {
 ```
 
 
-After this, I just needed to clone my [dotfiles](https://github.com/fuzzyGrim/dotfiles) and install the plugins with `:PackerSync` and I was ready to go. Here is a screenshot of my neovim setup with tmux. Note that I have zoomed in a bit to make the image font readable on the blog, but this is what I usually [see](https://user-images.githubusercontent.com/34800654/202558304-5a4bf789-6257-4ff5-a6b6-6a6fabfa94a1.jpg) on my iPad:
+After this, I just needed to clone my [dotfiles](https://github.com/fuzzyGrim/dotfiles) and install the plugins with `:PackerSync` and I was ready to go. Here is a screenshot of my neovim setup with tmux. Note that I have zoomed in a bit to make the image font readable on the blog, but this is what I usually [see](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-11-12-ipad-programming/nvim-normal.jpg) on my iPad:
 
-![nvim-up](https://user-images.githubusercontent.com/34800654/202556944-45aa85e7-c429-4170-b608-60cb73b361ef.jpg)
+![nvim](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-11-12-ipad-programming/nvim.jpg)
 
 ## Final thoughts
 

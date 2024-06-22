@@ -161,13 +161,13 @@ networks:
 ```
 First you will need to pass as environment variables your email from your Cloudflare account and your API Key, wbich can be found on `Profile > API Tokens > Global API Key`.
 
-![cloudflare-key](https://user-images.githubusercontent.com/34800654/166296937-22f6116a-d818-440a-8c6a-27f51d83e698.png)
+![cloudflare-key](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-05-02-exposing-services/cloudflare-key.png)
 
 With the labels, you are creating a router called `traefik`, a router is the tool that connects a requests from a entry point to a service. In this case, it will listen to the entrypoint HTTPS on the domain `traefik.domain.com`. Then, it will be requesting certificates for `domain.com` and any of its subdomains with cloudflare. Spin up the container with `docker-compose up -d` and if you go to your Cloudflare dashboard and create a DNS record for `traefik.domain.com` pointing to your computer's internal IP, you should be able to see your traefik dashboard on that domain. 
 
 You can use this dashboard to visualize the entrypoints, routers, middlewares and services that you are using in Traefik. This is how the dashboard should look like:
 
-![traefik-dashboard](https://user-images.githubusercontent.com/34800654/166293348-a0449c27-003a-453b-86d3-319684597642.png)
+![traefik-dashboard](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-05-02-exposing-services/traefik-dashboard.png)
 
 If you can see the dashboard, it means that you now have Traefik running, and it is working with Docker, the next step is to proxy requests to other docker containers. You will need to connect the service to the traefik network and add some labels, to do so, so add this to the `docker-compose.yml` file of your service:
 
@@ -437,7 +437,7 @@ As you can see, it is similar to a normal service proxied by Traefik, but with t
 
 To make sure it is working, you can go to `https://auth.domain.com` after setting up the DNS entries and you should see:
 
-![authelia](https://user-images.githubusercontent.com/34800654/166489895-65f1b25f-ec23-4330-9a7f-f26485f74318.png)
+![authelia](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-05-02-exposing-services/authelia.png)
 
 When you log in, you should see a webpage asking you to register a device. Click on Methods > One Time Password, then click on `Not registered yet`. After that, you should see a notification saying: `An email has been sent to your address to complete the process`. If you configured SMTP in `configuration.yml`, you should see a new mail in your inbox. If you used file-based as the example provided before, you should see a new file called `notification.txt`, which will include a URL in which you will be able to set up your One Time Password. Authelia also supports [Security keys](https://www.authelia.com/docs/features/2fa/security-key.html) and [Push Notification](https://www.authelia.com/docs/features/2fa/push-notifications.html), however I haven't tested those yet.
 
@@ -745,14 +745,14 @@ action = cloudflare-apiv4
 With this configuration, you are telling Fail2ban to use the log file located in `/var/log/authelia/authelia.log` and filter it with `authelia` which is the file previously created in `./data/filter.d/authelia.conf`. Then, if it finds 3 errors in less than a day, ban it with the action defined in `.data/action.d/cloudflare-apiv4.conf` for one day. You can ban it forever with `bantime = -1`. Now if you go to `auth.domain.com` and make three errors you should see:
 
 ***
-![cloudflare-ban](https://user-images.githubusercontent.com/34800654/166557510-02afd167-af7c-4c83-ad97-bcd2beb88091.png)
+![cloudflare-ban](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-05-02-exposing-services/cloudflare-ban.png)
 
 ***
 
 To unban yourself, go to the Cloudflare dashboard > Security > WAF > Tools and remove the entry:
 
 ***
-![cloudflare-ban-2](https://user-images.githubusercontent.com/34800654/166558001-ae0b9222-f271-48e0-a205-015ba4619d94.png)
+![cloudflare-ban-2](https://cdn.fuzzygrim.com/file/fuzzygrim/2022-05-02-exposing-services/cloudflare-ban-2.png)
 
 That should get you unbanned at Cloudflare level, but Fail2Ban keeps a list of banned IPs and you will have to delete your IP from that list as well, to do that, run: `docker exec fail2ban fail2ban-client unban <IP>`.
 

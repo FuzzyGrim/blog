@@ -92,7 +92,7 @@ goaccess access.log -c
 
 This will give you the option to choose one of the predefined log formats, for Traefik, you will want to choose `Common Log Format (CLF)`.
 
-![goaccess terminal](https://github.com/FuzzyGrim/Yamtrack/assets/34800654/4593775a-0636-4287-bfdb-de968ba67b3c)
+![goaccess terminal](https://cdn.fuzzygrim.com/file/fuzzygrim/2024-02-25-goaccess-traefik/goaccess_terminal.png)
 
 In the terminal, you can use `TAB` to scroll through the different statistics or select the one you want with `0-9` and `Shift + 0`. You can also use `j` and `k` to scroll up and down within each statistic.
 
@@ -102,7 +102,7 @@ Or if you prefer to send the statistics to a file, e.g. for an HTML file, you ca
 goaccess access.log --log-format=COMBINED -o report.html
 ```
 
-![goacess_html](https://github.com/FuzzyGrim/Yamtrack/assets/34800654/9552b39b-3d54-430e-b536-7ecba4068b99)
+![goacess_html](https://cdn.fuzzygrim.com/file/fuzzygrim/2024-02-25-goaccess-traefik/goacess_html.png)
 
 You could then serve the HTML file with a web server or open it in your browser by copying it to your local machine with something like `scp`:
 

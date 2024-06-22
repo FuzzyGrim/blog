@@ -173,8 +173,6 @@ done | \
 ### Software
 If you want to check which folders are taking a lot of space, I recommend using [ncdu](https://archlinux.org/packages/community/x86_64/ncdu/), you can install it with `sudo pacman -S ncdu`.
 
-![2021-10-12-17:18:39](https://user-images.githubusercontent.com/34800654/136983734-dda76948-7665-46d4-b5e1-b78a9a49eb2f.png)
+![ncdu](https://cdn.fuzzygrim.com/file/fuzzygrim/2021-09-09-arch-maintenance/ncdu.png)
 
 If you want a software that makes a backup when you upgrade your system, you can try [timeshift-autosnap](https://aur.archlinux.org/packages/timeshift-autosnap/). This package is only available in the AUR, therefore for installing it, use `paru -S timeshift-autosnap` or your preferred AUR helper. You can also use timeshift for automatic backups depending on your desired interval. 
-
-
