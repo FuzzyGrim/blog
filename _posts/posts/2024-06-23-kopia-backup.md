@@ -24,7 +24,6 @@ services:
             - 51515:51515
         environment:
             - KOPIA_PASSWORD=${KOPIA_REPOSITORY_PASSWORD}
-            - KOPIA_PERSIST_CREDENTIALS_ON_CONNECT=true
             - TZ=Europe/Madrid
         volumes:
             # Mount local folders needed by kopia
@@ -43,7 +42,7 @@ services:
             - --server-password=${KOPIA_USER_PASSWORD}
 ```
 
-When you start the container, you will have a Kopia server running on port 51515. It will ask you for a username and password, which you can set with the `KOPIA_USER` and `KOPIA_USER_PASSWORD` environment variables. The `KOPIA_REPOSITORY_PASSWORD` is the password for the repository which will be used later. You can use `KOPIA_PERSIST_CREDENTIALS_ON_CONNECT` to avoid having to input the credentials every time you connect to the server. The `data` volume is where you will mount the data you want to back up, and the `backup` volume is where the backups will be stored. The `export` volume is the path in which you want to export the backups.
+When you start the container, you will have a Kopia server running on port 51515. It will ask you for a username and password, which you can set with the `KOPIA_USER` and `KOPIA_USER_PASSWORD` environment variables. The `KOPIA_REPOSITORY_PASSWORD` is the password for the repository which will be used later. The `data` volume is where you will mount the data you want to back up, and the `backup` volume is where the backups will be stored. The `export` volume is the path in which you want to export the backups.
 
 
 ## Creating a repository for local backups
