@@ -49,7 +49,7 @@ When you start the container, you will have a Kopia server running on port 51515
 
 Once logged in, you will be presented with the following options for creating a repository:
 
-![Screenshot 2024-06-26 at 23-15-23 KopiaUI v0 17 0](https://github.com/FuzzyGrim/Yamtrack/assets/34800654/a61a6f28-afef-46c1-bcac-fee54513737d)
+![Kopia home](https://cdn.fuzzygrim.com/file/fuzzygrim/2024-06-27-kopia-backup/kopia-home.png)
 
 Here is their definition of a repository:
 
@@ -67,7 +67,7 @@ To create a snapshot, you will need to define a source, a schedule, and a retent
 
 Next, you will be asked for the different policies, like the schedule, retention, and the name of the snapshot. You can also define filters to exclude files or directories from the snapshot.
 
-![Screenshot 2024-06-26 at 23-41-36 KopiaUI v0 17 0](https://github.com/FuzzyGrim/Yamtrack/assets/34800654/f9624536-0d57-464a-9a66-ab10ca0d6386)
+![Snapshot policies](https://cdn.fuzzygrim.com/file/fuzzygrim/2024-06-27-kopia-backup/snapshot-policies.png)
 
 For each setting, you will see your defined value and the current setting (normally the values from the global policy). There are many settings you can define, making Kopias very flexible and powerful. You can leave most of them as they are, but I recommend setting a compression algorithm, as it can save a lot of space. You can check out their [official benchmark](https://kopia.io/docs/advanced/compression/#algorithm) to see which one is the best for you, if you just want a balance between speed and compression, I recommend `pgzip`.
 
