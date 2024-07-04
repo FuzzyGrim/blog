@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Backups with Kopia via Docker"
-date: 2024-02-27
+date: 2024-06-27
 excerpt: "Simple and secure 3-2-1 backups with Kopia"
 tags: [self-hosting, tutorial]
 ---
