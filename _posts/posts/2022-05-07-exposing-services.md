@@ -216,26 +216,28 @@ Now that you have learned how to use Traefik, you will set up [Authelia](https:/
 First create `configuration.yml`, and start by defining the following lines.
 ```yml
 server:
-  host: 0.0.0.0
-  port: 9091
+  address: 'tcp4://:9091'
+
 log:
   level: info
   format: text
   file_path: /var/log/authelia/authelia.log
+
 theme: dark
 ```
 
 This sets the host to any IP and the port to 9091, save logs to a file and set the theme to dark. Next to set your [JWT Secret](https://jwt.io/introduction) add the following line, you should use a random and long string.
 
 ```yml
-jwt_secret: LJQsMC5tbcaUycvkjpGQzEeR4hP9N587qv7WwH9rvsCvWgQJePp4nFoByT97
+identity_validation:
+  reset_password:
+    jwt_secret: LJQsMC5tbcaUycvkjpGQzEeR4hP9N587qv7WwH9rvsCvWgQJePp4nFoByT97
 ```
 
 Then add the following configuration:
 ```yml
-default_redirection_url: https://auth.domain.com
 totp:
-  issuer: authelia
+  issuer: authelia.com
 ```
 Let me explain what this does, Authelia will normally redirect back to the website the user was trying to access after correctly authenticating, however when a user visits the sign in portal directly, there is no website to redirect back, so with `default_redirection_url` you are telling Authelia to redirect to `https://auth.domain.com` in these cases. With the next two lines, you are setting up the name detected by your TOTP application for your Authelia service.
 
@@ -300,10 +302,13 @@ Next, to configure how authentication cookies are stored, add the following code
 ```yml
 session:
   name: authelia_session
+  # This secret can also be set using the env variables AUTHELIA_SESSION_SECRET_FILE
   secret: # another long and random string
   expiration: 8h
   inactivity: 2h
-  domain: domain.com  # Your root domain
+  cookies:
+    - domain: 'domain.com' # Should match whatever your root protected domain is
+      authelia_url: 'https://auth.domain.com'
 ```
 
 You will need to edit the `expiration` and `inactivity` time. `Expiration` refers to the time before the cookie expires and the session is destroyed, while `inactivity` indicates the time a user can be inactive until the session is destroyed.
@@ -339,22 +344,26 @@ This is how your `configuration.yml` should look like:
 ###############################################################
 
 server:
-  host: 0.0.0.0
-  port: 9091
+  address: 'tcp4://:9091'
+
 log:
   level: info
   format: text
   file_path: /var/log/authelia/authelia.log
+
 theme: dark
+
 # This secret can also be set using the env variables AUTHELIA_JWT_SECRET_FILE
-jwt_secret: LJQsMC5tbcaUycvkjpGQzEeR4hP9N587qv7WwH9rvsCvWgQJePp4nFoByT97
-default_redirection_url: https://auth.domain.com
+identity_validation:
+  reset_password:
+    jwt_secret: LJQsMC5tbcaUycvkjpGQzEeR4hP9N587qv7WwH9rvsCvWgQJePp4nFoByT97
+
 totp:
   issuer: authelia.com
 
-
 authentication_backend:
-  disable_reset_password: true
+  password_reset:
+    disable: true
   file:
     path: /config/users_database.yml
     password:
@@ -382,7 +391,9 @@ session:
   secret: WHTyUGVm3j424CraVgAgEnrGdT9cu9Wu3pfgjor7h3P53q6uAdaJ85eAbDCx
   expiration: 8h
   inactivity: 2h
-  domain: domain.com  # Should match whatever your root protected domain is
+  cookies:
+    - domain: 'domain.com' # Should match whatever your root protected domain is
+      authelia_url: 'https://auth.domain.com'
 
 regulation:
   max_retries: 3
