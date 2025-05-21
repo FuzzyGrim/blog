@@ -21,7 +21,7 @@ comments: true
 
 ## About
 
-After my [initial self-hosting setup](https:www.fuzzygrim.com/posts/selfhosted-setup), I tried sharing my self-hosted services externally. Like most people, I started with a VPN because it was easy and secure, but it quickly became a hassle once I wasn't the only user of my services. After weeks of tinkering with the configurations of different services, I think I have found a good balance between convenience and security. So, in this post I'm going to share my current setup that tries to minimize as much risk as possible with Traefik, Authelia, Fail2ban and Cloudflare Tunnels.
+After my [initial self-hosting setup](https://www.fuzzygrim.com/posts/selfhosted-setup), I tried sharing my self-hosted services externally. Like most people, I started with a VPN because it was easy and secure, but it quickly became a hassle once I wasn't the only user of my services. After weeks of tinkering with the configurations of different services, I think I have found a good balance between convenience and security. So, in this post I'm going to share my current setup that tries to minimize as much risk as possible with Traefik, Authelia, Fail2ban and Cloudflare Tunnels.
 
 
 ## Traefik
